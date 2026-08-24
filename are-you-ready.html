@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Ready? ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #050b24, #101b4d, #050b24);
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .emoji {
+            font-size: 65px;
+            margin-bottom: 20px;
+            animation: bounce 1.5s infinite;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 20px rgba(255,255,255,0.5);
+        }
+
+        p {
+            font-size: 20px;
+            opacity: 0.85;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            border: none;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .yes {
+            background: linear-gradient(45deg, #ff4f81, #ff85a8);
+            box-shadow: 0 0 20px rgba(255, 90, 130, 0.5);
+        }
+
+        .no {
+            background: #555b75;
+        }
+
+        .yes:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(255, 90, 130, 0.8);
+        }
+
+        .no:hover {
+            transform: scale(1.03);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="emoji">🥰✨</div>
+
+        <h1>Are You Ready For This?</h1>
+
+        <p>
+            I have something special waiting for you... ❤️
+        </p>
+
+        <div class="buttons">
+
+            <button class="yes" onclick="yesClicked()">
+                YES 💖
+            </button>
+
+            <button class="no">
+                NO 😏
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+        function yesClicked() {
+            window.location.href = "surprise.html";
+        }
+    </script>
+
+</body>
+</html>
